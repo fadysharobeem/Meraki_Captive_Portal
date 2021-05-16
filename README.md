@@ -1,9 +1,9 @@
 # Meraki External Captive Portal 
 
 The External Captive portal will allow you to authenticate users against MySQL database and assign group policy based on their membership levels stored in the database against the user. The below instructions are based on Ubuntu server.
-
-<img style="text-align: center;" src="static/User_Captive.png" width="200">
-
+<div style="text-align: center;">
+<img src="static/User_Captive.png" width="200">
+</div>
 ### Configuration
 
 #### Obtain Meraki API key
