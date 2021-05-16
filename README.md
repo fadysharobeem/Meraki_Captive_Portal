@@ -1,9 +1,9 @@
 # Meraki External Captive Portal 
 
 The External Captive portal will allow you to authenticate users against MySQL database and assign group policy based on their membership levels stored in the database against the user. The below instructions are based on Ubuntu server.
-<div style="text-align: center;">
-<img src="static/User_Captive.png" width="200">
-</div>
+
+<img style="text-align: center;" src="static/User_Captive.png" width="200"></img>
+
 ### Configuration
 
 #### Obtain Meraki API key
@@ -65,10 +65,11 @@ Create Meraki Group policies and make sure the name matches what will be configu
 
 - From any browser enter http://ip_address:5000 or http://localhost:5000
 - Choose Admin from top right corner
-<img style="text-align: center;" src="static/Admin_Captive.png" width="200">
+<img style="text-align: center;" src="static/Admin_Captive.png" width="200"></img>
+
 - Enter username: admin, password:admin
 - Provide the details and hit save
 - Go back to Captive Portal page
 - Enter any username and password to allow the script build the database
-- Login to Database via MySQLWorkbench. Can be downloaded from [here](https://dev.mysql.com/downloads/workbench/)
+- Login to Database via MySQLWorkbench. Download [here](https://dev.mysql.com/downloads/workbench/)
 - Add users in Captive table inside the database
