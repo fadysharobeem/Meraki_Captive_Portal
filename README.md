@@ -51,8 +51,8 @@ Create Meraki Group policies and make sure the name matches what will be configu
     ```
 - Allow admin access to the Captive Portal Repo
     ```bash
-    $ sudo chmod 777 /Meraki_Captive_Portal
-    $ sudo chmod -R a+rw /Meraki_Captive_Portal
+    $ sudo chmod 777 ../Meraki_Captive_Portal
+    $ sudo chmod -R a+rw ../Meraki_Captive_Portal
     ```
 - Run the app
     ```bash
