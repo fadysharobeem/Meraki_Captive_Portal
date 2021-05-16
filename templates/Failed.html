@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Failed</title>
+    <link rel="stylesheet" href= "{{ url_for('static',filename='style/nicepage.css') }}"  media="screen">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='style/Failed.css') }}" media="screen">
+    <link rel="icon" href="/static/images/favicon.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+
+    <meta property="og:title" content="Failed">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#ff3f5e">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-3b2b"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="https://splash.netdecorators.com" class="u-image u-logo u-image-1">
+          <img src="{{ url_for('static',filename='images/default-logo.png') }}" class="u-logo-image u-logo-image-1">
+        </a>
+        <a href="/Admin" class="u-active-none u-border-2 u-border-active-palette-2-dark-1 u-border-custom-color-1 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-custom-color-1 u-text-hover-palette-2-base u-btn-1">Admin</a>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-e9fd">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div alt="" class="u-align-left u-image u-image-circle u-image-1" src="" data-image-width="8333" data-image-height="5554"></div>
+        <h1 class="u-align-center u-heading-font u-text u-title u-text-1">My Business</h1>
+        <h6 class="u-align-center u-text u-text-2">Your details were wrong, please click back and try again</h6>
+        <form action="/retry" method ="GET">
+        <button class="u-btn u-button-style u-custom-color-1 u-hover-palette-4-light-1 u-btn-1">Back</button>
+      </form>
+      </div>
+    </section>
+
+  </body>
+</html>

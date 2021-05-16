@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Admin logged</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style/nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style/Admin-logged.css') }}" media="screen">
+    <link rel="icon" href="/static/images/favicon.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+
+    <script type='text/javascript'>
+        function loading(){
+          document.getElementById("loading").style.display = "block";
+          document.getElementById("waiting").style.display = "block";
+          document.getElementById("sec-0eb4").style.display = "none";
+          document.getElementById("sec-b530").style.display = "none";
+        }
+    </script>
+
+    <meta property="og:title" content="Admin logged">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#ff3f5e">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body"><header class="u-align-left u-clearfix u-header u-header" id="sec-3b2b"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://meraki.cisco.com" class="u-image u-logo u-image-1">
+          <img src="{{ url_for('static',filename='/images/default-logo.png') }}" class="u-logo-image u-logo-image-1">
+        </a>
+        <a href="/Admin" class="u-active-none u-border-2 u-border-active-palette-2-dark-1 u-border-custom-color-1 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-custom-color-1 u-text-hover-palette-2-base u-btn-1">Admin</a>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-0eb4">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-center u-text u-text-1">{{Admin_Name}}</h1>
+        <h4 class="u-align-center u-text u-text-2">Welcome</h4>
+      </div>
+    </section>
+
+    <section class="u-align-left u-clearfix u-section-2" id="sec-b530">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center u-form u-form-1">
+          <form onsubmit="loading();" action="/save" method="POST" class="u-clearfix u-form-spacing-12 u-form-vertical u-inner-form" style="padding: 7px;" source="custom" name="form">
+            <div class="u-form-group u-form-name">
+              <label for="name-d78c" class="u-label u-label-1">API Key</label>
+              <input type="password" placeholder="API Key" id="name-d78c" name="api" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"  value=''>
+            </div>
+            <div class="u-form-group u-form-group-2">
+              <label for="text-9ae9" class="u-label u-label-2">Username</label>
+              <input type="text" placeholder="Username" id="text-9ae9" name="username" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" value='{{data["username"]}}'>
+            </div>
+            <div class="u-form-group u-form-group-3">
+              <label for="text-25ae" class="u-label u-label-3">Password</label>
+              <input type="password" placeholder="Password" id="text-25ae" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" value=''>
+            </div>
+            <div class="u-form-group u-form-group-4">
+              <label for="text-ccdb" class="u-label u-label-4">Database Host</label>
+              <input type="text" placeholder="Hostname or IP address" id="text-ccdb" name="DB_IP" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" value='{{data["Database_host"]}}'>
+            </div>
+            <div class="u-form-group u-form-group-5">
+              <label for="text-e589" class="u-label u-label-5">Database Username</label>
+              <input type="text" placeholder="Username" id="text-e589" name="DBUsername" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" value='{{data["Database_username"]}}'>
+            </div>
+            <div class="u-form-group u-form-group-6">
+              <label for="text-0b35" class="u-label u-label-6">Database Password</label>
+              <input type="password" placeholder="Password" id="text-0b35" name="DB_pass" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" value=''>
+            </div>
+            <div class="u-form-group u-form-group-7">
+              <label for="text-6058" class="u-label u-label-7">Database SQL Name</label>
+              <input type="text" placeholder="sys" id="text-6058" name="DB_sys" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" value='sys' style="color:#FF0000" readonly>
+            </div>
+            <div class="u-form-group u-form-group-8">
+              <label for="text-d329" class="u-label u-label-8">Database Table</label>
+              <input type="text" placeholder="Table Name" id="text-d329" name="DB_table" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" value='Admin' style="color:#FF0000" readonly>
+            </div>
+            <div class="u-form-group u-form-group-9">
+              <label for="text-8367" class="u-label u-label-9">Syslog Server IP</label>
+              <input type="text" placeholder="Syslog IP" id="text-8367" name="syslog_ip" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" value='{{data["Syslog_server"]}}'>
+            </div>
+            <div class="u-form-group u-form-group-10">
+              <label for="text-780d" class="u-label u-label-10">Syslog Port</label>
+              <input type="text" placeholder="Syslog Port" id="text-780d" name="syslog_port" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" value='{{data["Syslog_port"]}}'>
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <button class="u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1">Save</button>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div id="loading" class="loading"></div>
+    <div id="waiting" style="text-align:center; display:none;">
+      <br>Please wait</br>
+    </div>
+    </div>
+  </body>
+</html>

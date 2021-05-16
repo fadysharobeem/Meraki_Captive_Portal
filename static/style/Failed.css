@@ -1,0 +1,69 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 575px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/dashboard-environment-image-mobile.jpg");
+  background-position: 50% 50%;
+  margin: 20px auto 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 3.75rem;
+  width: 880px;
+  margin: 49px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  width: 880px;
+  margin: 11px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-image: none;
+  margin: 30px auto 60px;
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-image-1 {
+    height: 241px;
+    width: 241px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    font-size: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: 340px;
+  }
+}

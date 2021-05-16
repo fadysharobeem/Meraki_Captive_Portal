@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="My Business">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Captive Portal</title>
+    <link rel="stylesheet" href= "{{ url_for('static',filename='style/nicepage.css') }}"  media="screen">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='style/Captive-Portal.css') }}" media="screen">
+    <link rel="icon" href="/static/images/favicon.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+
+    <script type='text/javascript'>
+        function loading(){
+          document.getElementById("loading").style.display = "block";
+          document.getElementById("waiting").style.display = "block";
+          document.getElementById("sec-1e1f").style.display = "none";
+          document.getElementById("sec-39aa").style.display = "none";
+        }
+    </script>
+
+    <meta property="og:title" content="Captive Portal">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#ff3f5e">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+
+  <body class="u-body">
+    <header class="u-clearfix u-header u-header" id="sec-3b2b">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="https://splash.netdecorators.com" class="u-image u-logo u-image-1">
+          <img src="{{ url_for('static',filename='images/default-logo.png') }}" class="u-logo-image u-logo-image-1">
+        </a>
+        <a href="/Admin" class="u-active-none u-border-2 u-border-active-palette-2-dark-1 u-border-custom-color-1 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-custom-color-1 u-text-hover-palette-2-base u-btn-1">Admin</a>
+      </div>
+    </header>
+
+    <section class="u-clearfix u-section-1" id="sec-1e1f">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div alt="" class="u-align-left u-image u-image-circle u-image-1" src="" data-image-width="8333" data-image-height="5554"></div>
+        <h1 class="u-align-center u-heading-font u-text u-title u-text-1">My Business</h1>
+        <h6 class="u-align-center u-text u-text-2">Enter your name and membership number to connect to WiFi</h6>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-2" id="sec-39aa">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
+              <form onsubmit="loading();" action="/verify" method="POST" class="u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form" style="padding: 15px" source="custom">
+                <div class="u-form-group u-form-name">
+                  <label for="name-558c" class="u-form-control-hidden u-label">Name</label>
+                  <input type="text" placeholder="Name" id="name-558c" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+                </div>
+            <div class="u-form-group">
+              <label for="email-558c" class="u-form-control-hidden u-label">Membership</label>
+              <input type="text" placeholder="Membership" id="email-558c" name="membership" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="required">
+            </div>
+            <div class="u-form-group u-form-submit">
+              <button  class="u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1">Connect</button>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div id="loading" class="loading"></div>
+    <div id="waiting" style="text-align:center; display:none;">
+      <br>Please wait</br>
+    </div>
+    </div>
+  </body>
+
+</html>

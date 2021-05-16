@@ -1,0 +1,5 @@
+flask
+flask_session
+pysyslogclient
+mysql-connector-python
+pymysql
