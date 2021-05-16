@@ -15,13 +15,13 @@ Create Meraki Group policies and make sure the name matches what will be configu
 ### Installation
 
 #### Getting started
-- Install python3 pip package
-    ```bash
-    $ sudo apt install python3-pip
-    ```
 - Update Ubuntu packages
     ```bash
     $ sudo apt update
+    ```
+- Install python3 pip package
+    ```bash
+    $ sudo apt install python3-pip
     ```
 
 #### Install MySQL Database
