@@ -68,7 +68,7 @@ Create Meraki Group policies and make sure the name matches what will be configu
 
 <img style="text-align: center;" src="static/Admin_Captive.png" width="200"></img>
 
-- Enter username: admin, password:admin
+- Enter username: admin, Password: admin
 - Provide the details and hit save
 - Go back to Captive Portal page
 - Enter any username and password to allow the script build the database
