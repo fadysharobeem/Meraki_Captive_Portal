@@ -6,6 +6,8 @@ The External Captive portal will allow you to authenticate users against MySQL d
 
 ### Configuration
 
+Here is the YouTube link for the implmentation steps [here](https://www.youtube.com/watch?v=LtmaSYwjaP4).
+
 #### Obtain Meraki API key
 
 Meraki API write Key is needed to allow the transfer of the configuration. Obtain Meraki API key [here](https://developer.cisco.com/meraki/api/#!authorization/obtaining-your-meraki-api-key).
